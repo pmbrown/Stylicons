@@ -1,0 +1,372 @@
+// ---------------------------------------------------------- 
+// Icons
+// ----------------------------------------------------------
+@use "config" as *;
+@use "svg" as *;
+@use "custom" as *;
+
+:where(html) {
+  @if $enable-house-svg {
+    --house: #{$house};
+  }
+  
+  @if $enable-email-svg {
+    --email: #{$email};
+  }
+  
+  @if $enable-plus-svg {
+    --plus: #{$plus};
+  }
+  
+  @if $enable-minus-svg {
+    --minus: #{$minus};
+  }
+  
+  @if $enable-bars-svg {
+    --bars: #{$bars};
+  }
+  
+  @if $enable-dots-h-svg {
+    --dots-h: #{$dots-h};
+  }
+  
+  @if $enable-dots-v-svg {
+    --dots-v: #{$dots-v};
+  }
+  
+  @if $enable-caret-down-svg {
+    --caret-down: #{$caret-down};
+  }
+  
+  @if $enable-caret-up-svg {
+    --caret-up: #{$caret-up};
+  }
+  
+  @if $enable-caret-left-svg {
+    --caret-left: #{$caret-left};
+  }
+  
+  @if $enable-caret-right-svg {
+    --caret-right: #{$caret-right};
+  }
+  
+  @if $enable-close-svg {
+    --close: #{$close};
+  }
+  
+  @if $enable-ext-link-svg {
+    --ext-link: #{$ext-link};
+  }
+  
+  @if $enable-pg-link-svg {
+    --pg-link: #{$pg-link};
+  }
+  
+  @if $enable-search-svg {
+    --search: #{$search};
+  }
+  
+  @if $enable-box-svg {
+    --box: #{$box};
+  }
+  
+  @if $enable-pen-box-svg {
+    --pen-box: #{$pen-box};
+  }
+  
+  @if $enable-tick-box-svg {
+    --tick-box: #{$tick-box};
+  }
+  
+  @if $enable-close-box-svg {
+    --close-box: #{$close-box};
+  }
+  
+  @if $enable-close-box-fill-svg {
+    --close-box-fill: #{$close-box-fill};
+  }
+  
+  @if $enable-download-svg {
+    --download: #{$download};
+  }
+  
+  @if $enable-user-svg {
+    --user: #{$user};
+  }
+  
+  @if $enable-question-svg {
+    --question: #{$question};
+  }
+  
+  @if $enable-sun-svg {
+    --sun: #{$sun};
+  }
+  
+  @if $enable-moon-svg {
+    --moon: #{$moon};
+  }
+  
+  // Brands
+  
+  @if $enable-rss-svg {
+    --rss: #{$rss};
+  }
+  
+  @if $enable-github-svg {
+    --github: #{$github};
+  }
+  
+  @if $enable-twitter-svg {
+    --twitter: #{$twitter};
+  }
+  
+  @if $enable-mastodon-svg {
+    --mastodon: #{$mastodon};
+  }
+
+  @if $enable-tiktok-svg {
+    --tiktok: #{$tiktok};
+  }
+    
+  @if $enable-facebook-svg {
+    --facebook: #{$facebook};
+  }
+  
+  @if $enable-instagram-svg {
+    --instagram: #{$instagram};
+  }
+  
+  @if $enable-pinterest-svg {
+    --pinterest: #{$pinterest};
+  }
+  
+  @if $enable-codepen-svg {
+    --codepen: #{$codepen};
+  }
+  
+  @if $enable-reddit-svg {
+    --reddit: #{$reddit};
+  }
+  
+  // Custom icons from _custom.scss
+  @each $custom-icons, $value in $custom-icons {
+    --#{$custom-icons}: #{$value};
+  }  
+}
+
+@if $enable-house-svg {
+  .house {
+    --svg: var(--house);        
+  }
+}
+
+@if $enable-email-svg {
+  .email {
+    --svg: var(--email);        
+  }
+}
+
+@if $enable-plus-svg {
+  .plus {
+    --svg: var(--plus);        
+  }
+}
+
+@if $enable-minus-svg {
+  .minus {
+    --svg: var(--minus);        
+  }
+}
+
+@if $enable-ext-link-svg {
+  .ext-link {
+    --svg: var(--ext-link);        
+  }
+}
+
+@if $enable-pg-link-svg {
+  .pg-link {
+    --svg: var(--pg-link);        
+  }
+}
+
+@if $enable-bars-svg {
+  .bars {
+    --svg: var(--bars);        
+  }
+}
+
+@if $enable-dots-h-svg {
+  .dots-h {
+    --svg: var(--dots-h);        
+  }
+}
+
+@if $enable-dots-v-svg {
+  .dots-v {
+    --svg: var(--dots-v);        
+  }
+}
+
+@if $enable-caret-down-svg {
+  .caret-down {
+    --svg: var(--caret-down);        
+  }
+}
+
+@if $enable-caret-up-svg {
+  .caret-up {
+    --svg: var(--caret-up);        
+  }
+}
+
+@if $enable-caret-left-svg {
+  .caret-left {
+    --svg: var(--caret-left);        
+  }
+}
+
+@if $enable-caret-right-svg {
+  .caret-right {
+    --svg: var(--caret-right);        
+  }
+}
+
+@if $enable-box-svg {
+  .box {
+    --svg: var(--box);        
+  }
+}
+
+@if $enable-pen-box-svg {
+  .pen-box {
+    --svg: var(--pen-box);        
+  }
+}
+
+@if $enable-close-svg {
+  .close {
+    --svg: var(--close);        
+  }
+}
+
+@if $enable-close-box-svg {
+  .close-box {
+    --svg: var(--close-box);        
+  }
+}
+
+@if $enable-close-box-fill-svg {
+  .close-box-fill {
+    --svg: var(--close-box-fill);        
+  }
+}
+
+@if $enable-tick-box-svg {
+  .tick-box {
+    --svg: var(--tick-box);        
+  }
+}
+
+@if $enable-search-svg {
+  .search {
+    --svg: var(--search);        
+  }
+}
+
+@if $enable-download-svg {
+  .download {
+    --svg: var(--download);        
+  }
+}
+
+@if $enable-user-svg {
+  .user {
+    --svg: var(--user);        
+  }
+}
+
+@if $enable-question-svg {
+  .question {
+    --svg: var(--question);        
+  }
+}
+
+@if $enable-sun-svg {
+  .sun {
+    --svg: var(--sun);        
+  }
+}
+
+@if $enable-moon-svg {
+  .moon {
+    --svg: var(--moon);        
+  }
+}
+
+@if $enable-rss-svg {
+  .rss {
+    --svg: var(--rss);        
+  }
+}
+
+@if $enable-github-svg {
+  .github {
+    --svg: var(--github);        
+  }
+}
+
+@if $enable-twitter-svg {
+  .twitter {
+    --svg: var(--twitter);        
+  }
+}
+
+@if $enable-mastodon-svg {
+  .mastodon {
+    --svg: var(--mastodon);        
+  }
+}
+
+@if $enable-tiktok-svg {
+  .tiktok {
+    --svg: var(--tiktok);        
+  }
+}
+
+@if $enable-facebook-svg {
+  .facebook {
+    --svg: var(--facebook);        
+  }
+}
+
+@if $enable-instagram-svg {
+  .instagram {
+    --svg: var(--instagram);        
+  }
+}
+
+@if $enable-pinterest-svg {
+  .pinterest {
+    --svg: var(--pinterest);        
+  }
+}
+
+@if $enable-codepen-svg {
+  .codepen {
+    --svg: var(--codepen);        
+  }
+}
+
+@if $enable-reddit-svg {
+  .reddit {
+    --svg: var(--reddit);        
+  }
+}
+
+// Custom icons from _custom.scss
+@each $custom-icons, $value in $custom-icons {
+  .#{$custom-icons} {
+    --svg: var(--#{$custom-icons});        
+  }
+}

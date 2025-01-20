@@ -1,0 +1,40 @@
+// ---------------------------------------------------------- 
+// Icon utilities
+// ----------------------------------------------------------
+@use "mixins" as *;
+@include version("");
+
+:where(html) { 
+  @include icon-variables;
+}
+
+.ico:before, .ico-b:before, .ico-a:after, .ico-block:before, .ico-block-center:before {
+  @include icon-mask;
+}
+
+.ico-b:before { 
+  margin-inline-end: var(--ico-mr);
+}
+
+.ico-a:after {
+  margin-inline-start: var(--ico-ml);
+}
+
+.ico-block:before, .ico-block-center:before {
+  --ico-va: initial;
+  display: block;
+  margin-block-end: var(--ico-mb);
+}
+
+.ico-block-center:before {
+  margin-inline: auto;
+}
+
+/*! Customize link and button colors in custom CSS for more control */
+:where(a) {
+  --ico: var(--ico-link);
+}
+
+:where(button) {
+  --ico: var(--ico-btn);
+}

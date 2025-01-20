@@ -1,0 +1,23 @@
+// ---------------------------------------------------------- 
+// Custom icons
+// Use the $template to create new icons following the method 
+// used for the Stylicons logo. Multiple paths can be used,
+// ensure viewBox sizes matches original SVG values.
+// ----------------------------------------------------------
+// $template:   url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path d=''/></svg>") !default;
+
+// Stylicons logo
+$stylicons:   url("data:image/svg+xml,<svg viewBox='0 0 192 192' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path d='m36 0c-36 0-36 36-36 36v120c0 36 36 36 36 36h120c36 0 36-36 36-36v-120c0-36-36-36-36-36h-120zm59.1 38.5c75.3 0 69.9 117 69.9 117s-26.9-63.6-69.9-63.6c-43 0-69.9 63.6-69.9 63.6s-5.38-117 69.9-117z'/></svg>");
+
+// ----------------------------------------------------------
+// Map (delete Stylicons logo as required)
+// ----------------------------------------------------------
+$custom-icons: ( 
+  "stylicons": $stylicons,
+) !default;
+
+// ----------------------------------------------------------
+// Important! If updating Stylicons from source files make
+// sure you make a copy of any custom icons included so they
+// are not lost in any version updates.
+// ----------------------------------------------------------
